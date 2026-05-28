@@ -2,16 +2,32 @@
 
 nextflow.enable.dsl=2
 
-process TEST {
+params.reads = "data/test_fastq/*.fq"
+
+process FASTQC {
+
+    container 'biocontainers/fastqc:v0.11.9_cv8'
+
+    publishDir "results/fastqc", mode: 'copy'
+
+    input:
+    path reads
+
     output:
-    stdout
+    path "*.html"
+    path "*.zip"
 
     script:
     """
-    echo "Bryophyte PCD pipeline initialized successfully"
+    fastqc ${reads}
     """
 }
 
 workflow {
-    TEST()
+
+    Channel
+        .fromPath(params.reads)
+        .set { read_files }
+
+    FASTQC(read_files)
 }
