@@ -25,7 +25,7 @@ process FASTQC {
 
 workflow {
 
-    Channel
+    channel
         .fromPath(params.reads)
         .set { read_files }
 
