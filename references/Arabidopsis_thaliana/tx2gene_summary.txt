@@ -1,0 +1,9 @@
+tx2gene generation summary
+
+Annotation:
+ /Users/aakanksha/Desktop/github/Bryophyte-PCD/references/Arabidopsis_thaliana/annotation.gff3 
+
+Transcripts: 0 
+Genes: 0 
+
+Generated: 1784752257 

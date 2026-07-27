@@ -1,0 +1,19 @@
+﻿#!/usr/bin/env bash
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR203/092/SRR20309392/SRR20309392_1.fastq.gz -o SRR20309392_GSM6351396_BoGa_t0_rep2_Marchantia_polymorpha_RNA-Seq_1.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR203/092/SRR20309392/SRR20309392_2.fastq.gz -o SRR20309392_GSM6351396_BoGa_t0_rep2_Marchantia_polymorpha_RNA-Seq_2.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR203/080/SRR20309380/SRR20309380_1.fastq.gz -o SRR20309380_GSM6351408_BoGa_t6LL_rep2_Marchantia_polymorpha_RNA-Seq_1.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR203/080/SRR20309380/SRR20309380_2.fastq.gz -o SRR20309380_GSM6351408_BoGa_t6LL_rep2_Marchantia_polymorpha_RNA-Seq_2.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR203/081/SRR20309381/SRR20309381_1.fastq.gz -o SRR20309381_GSM6351407_BoGa_t6LL_rep1_Marchantia_polymorpha_RNA-Seq_1.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR203/081/SRR20309381/SRR20309381_2.fastq.gz -o SRR20309381_GSM6351407_BoGa_t6LL_rep1_Marchantia_polymorpha_RNA-Seq_2.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR203/093/SRR20309393/SRR20309393_1.fastq.gz -o SRR20309393_GSM6351395_BoGa_t0_rep1_Marchantia_polymorpha_RNA-Seq_1.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR203/093/SRR20309393/SRR20309393_2.fastq.gz -o SRR20309393_GSM6351395_BoGa_t0_rep1_Marchantia_polymorpha_RNA-Seq_2.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR203/079/SRR20309379/SRR20309379_1.fastq.gz -o SRR20309379_GSM6351409_BoGa_t6LL_rep3_Marchantia_polymorpha_RNA-Seq_1.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR203/079/SRR20309379/SRR20309379_2.fastq.gz -o SRR20309379_GSM6351409_BoGa_t6LL_rep3_Marchantia_polymorpha_RNA-Seq_2.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR203/069/SRR20309369/SRR20309369_1.fastq.gz -o SRR20309369_GSM6351419_BoGa_t6HL_rep1_Marchantia_polymorpha_RNA-Seq_1.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR203/069/SRR20309369/SRR20309369_2.fastq.gz -o SRR20309369_GSM6351419_BoGa_t6HL_rep1_Marchantia_polymorpha_RNA-Seq_2.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR203/091/SRR20309391/SRR20309391_1.fastq.gz -o SRR20309391_GSM6351397_BoGa_t0_rep3_Marchantia_polymorpha_RNA-Seq_1.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR203/091/SRR20309391/SRR20309391_2.fastq.gz -o SRR20309391_GSM6351397_BoGa_t0_rep3_Marchantia_polymorpha_RNA-Seq_2.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR203/067/SRR20309367/SRR20309367_1.fastq.gz -o SRR20309367_GSM6351421_BoGa_t6HL_rep3_Marchantia_polymorpha_RNA-Seq_1.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR203/067/SRR20309367/SRR20309367_2.fastq.gz -o SRR20309367_GSM6351421_BoGa_t6HL_rep3_Marchantia_polymorpha_RNA-Seq_2.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR203/068/SRR20309368/SRR20309368_1.fastq.gz -o SRR20309368_GSM6351420_BoGa_t6HL_rep2_Marchantia_polymorpha_RNA-Seq_1.fastq.gz
+curl -L ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR203/068/SRR20309368/SRR20309368_2.fastq.gz -o SRR20309368_GSM6351420_BoGa_t6HL_rep2_Marchantia_polymorpha_RNA-Seq_2.fastq.gz

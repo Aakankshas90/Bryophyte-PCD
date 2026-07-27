@@ -1,0 +1,9 @@
+tx2gene generation summary
+
+Annotation:
+ /Users/aakanksha/Desktop/github/Bryophyte-PCD/references/Marchantia_polymorpha/annotation.gff3 
+
+Transcripts: 22674 
+Genes: 18038 
+
+Generated: 1784752195 

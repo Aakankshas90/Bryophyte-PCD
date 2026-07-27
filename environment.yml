@@ -1,0 +1,52 @@
+name: bryophyte-rnaseq
+
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+
+dependencies:
+
+  # Python
+  - python=3.12
+
+  # R
+  - r-base=4.5
+
+  # Bioinformatics
+  - fastqc
+  - fastp
+  - salmon
+  - multiqc
+
+  # R packages from conda
+  - r-readr
+  - r-dplyr
+  - r-tibble
+  - r-stringr
+  - r-purrr
+  - r-data.table
+  - r-ggplot2
+  - r-pheatmap
+
+  # Bioconductor
+  - bioconductor-tximport
+  - bioconductor-deseq2
+  - bioconductor-edger
+  - bioconductor-rtracklayer
+  - bioconductor-genomicfeatures
+  - bioconductor-biocparallel
+
+  # GO enrichment
+  - bioconductor-clusterprofiler
+  - bioconductor-org.at.tair.db
+
+  # Utilities
+  - git
+  - wget
+  - curl
+  - pigz
+
+  # Optional but useful
+  - parallel
+  - tree
