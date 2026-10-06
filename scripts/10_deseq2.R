@@ -31,8 +31,6 @@ tan_metadata_file <- "/Users/aakanksha/Desktop/github/Bryophyte-PCD/metadata/Tan
 
 schroder_metadata_file <- "/Users/aakanksha/Desktop/github/Bryophyte-PCD/metadata/Schroder2023_samplesheet.tsv"
 
-leong_metadata_file <- "/Users/aakanksha/Desktop/github/Bryophyte-PCD/metadata/Leong2022_samplesheet.tsv"
-
 grenz_metadata_file <- "/Users/aakanksha/Desktop/github/Bryophyte-PCD/metadata/Grenz2025_samplesheet.tsv"
 
 
@@ -52,12 +50,6 @@ dir.create(
 
 dir.create(
   file.path(output_base, "Schroder2023"),
-  recursive = TRUE,
-  showWarnings = FALSE
-)
-
-dir.create(
-  file.path(output_base, "Leong2022"),
   recursive = TRUE,
   showWarnings = FALSE
 )
