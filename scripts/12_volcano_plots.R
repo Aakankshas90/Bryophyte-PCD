@@ -1,9 +1,7 @@
 ############################################################
-# 13_MA_volcano_plots.R
+# 13_volcano_plots.R
 #
-# MA plots and volcano plots for DESeq2 results
-#
-# Designed for running directly in RStudio
+# Volcano plots for DESeq2 results
 ############################################################
 
 library(ggplot2)
@@ -158,80 +156,6 @@ make_plots <- function(
     "\n"
   )
   
-  
-  ##########################################################
-  # MA PLOT
-  ##########################################################
-  
-  ma_data <- res %>%
-    filter(
-      !is.na(baseMean),
-      !is.na(log2FoldChange),
-      baseMean > 0
-    )
-  
-  
-  ma_plot <- ggplot(
-    ma_data,
-    aes(
-      x = log10(baseMean + 1),
-      y = log2FoldChange
-    )
-  ) +
-    
-    geom_point(
-      aes(color = significance),
-      size = 1,
-      alpha = 0.5
-    ) +
-    
-    geom_hline(
-      yintercept = 0,
-      linetype = "dashed"
-    ) +
-    
-    geom_hline(
-      yintercept = c(-1, 1),
-      linetype = "dotted"
-    ) +
-    
-    scale_color_manual(
-      values = c(
-        "Upregulated" = "red",
-        "Downregulated" = "blue",
-        "Not significant" = "grey70"
-      )
-    ) +
-    
-    labs(
-      title = paste0(
-        "MA plot: ",
-        comparison_name
-      ),
-      x = "log10(baseMean + 1)",
-      y = "log2 fold change",
-      color = "Category"
-    ) +
-    
-    theme_classic(base_size = 14)
-  
-  
-  ##########################################################
-  # Save MA plot
-  ##########################################################
-  
-  ggsave(
-    filename = file.path(
-      OUTPUT_DIR,
-      paste0(output_prefix, "_MA.png")
-    ),
-    plot = ma_plot,
-    width = 8,
-    height = 7,
-    dpi = 300
-  )
-  
-  
   ##########################################################
   # VOLCANO PLOT
   ##########################################################
@@ -310,18 +234,8 @@ make_plots <- function(
   
   
   ##########################################################
-  # Also save PDF versions
+  # PDF versions
   ##########################################################
-  
-  ggsave(
-    filename = file.path(
-      OUTPUT_DIR,
-      paste0(output_prefix, "_MA.pdf")
-    ),
-    plot = ma_plot,
-    width = 8,
-    height = 7
-  )
   
   ggsave(
     filename = file.path(
@@ -443,31 +357,6 @@ if (file.exists(grenz_file)) {
       "Grenz2025_infected_vs_control"
   )
 }
-
-
-############################################################
-# LEONG 2022/2023
-############################################################
-
-leong_file <- file.path(
-  INPUT_DIR,
-  "Leong2022",
-  "calcium_deficiency_vs_control_apeglm.csv"
-)
-
-if (file.exists(leong_file)) {
-  
-  make_plots(
-    result_file = leong_file,
-    
-    comparison_name =
-      "Leong2022: calcium deficiency vs control",
-    
-    output_prefix =
-      "Leong2022_calcium_deficiency_vs_control"
-  )
-}
-
 
 ############################################################
 # DONE
