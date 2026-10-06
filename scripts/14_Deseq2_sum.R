@@ -24,7 +24,6 @@ files <- c(
   "Tan2023_D2/salt_vs_control.csv",
   "Schroder2023/high_light_vs_control.csv",
   "Grenz2025/infected_vs_control.csv",
-  "calcium_deficient_vs_control.csv"
 )
 
 
