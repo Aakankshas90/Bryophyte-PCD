@@ -8,13 +8,7 @@
 set -uo pipefail
 
 
-########################################
-############ USER SETTINGS #############
-########################################
-
-PROJECT_DIR="/Users/aakanksha/Desktop/github/Bryophyte-PCD"
-
-DATA_DIR="$PROJECT_DIR/data/Marchantia_polymorpha"
+DATA_DIR="/Volumes/AakankshaHd/PCD"
 
 ########################################
 
