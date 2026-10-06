@@ -22,13 +22,13 @@ THREADS=8
 
 PROJECT_DIR="/Users/aakanksha/Desktop/github/Bryophyte-PCD"
 
-TRIMMED_DIR="/Volumes/AakankshaHd/PCD/Marchantia/trimmed"
+TRIMMED_DIR="/Users/aakanksha/Desktop/github/Calcium_deficiency/trimmed"
 
 INDEX_DIR="${PROJECT_DIR}/references/Marchantia_polymorpha/salmon_index"
 
-OUTPUT_DIR="/Volumes/AakankshaHd/PCD/Marchantia/trimmed/salmon"
+OUTPUT_DIR="/Users/aakanksha/Desktop/github/Calcium_deficiency/trimmed/salmon"
 
-LOG_DIR="${PROJECT_DIR}/data/Marchantia/logs"
+LOG_DIR="${OUTPUT_DIR}/logs"
 
 
 
@@ -224,7 +224,6 @@ do
             -1 "$R1" \
             -2 "$R2" \
             -p "$THREADS" \
-            --validateMappings \
             --gcBias \
             -o "$OUTDIR"
 
@@ -237,7 +236,6 @@ do
             -l A \
             -r "$R1" \
             -p "$THREADS" \
-            --validateMappings \
             --gcBias \
             -o "$OUTDIR"
 
