@@ -15,7 +15,7 @@ set -uo pipefail
 
 PROJECT_DIR="/Users/aakanksha/Desktop/github/Bryophyte-PCD"
 
-DATA_DIR="$PROJECT_DIR/data/Marchantia_polymorpha"
+DATA_DIR="/Volumes/AakankshaHd/PCD/raw/"
 
 THREADS=8
 
@@ -23,9 +23,9 @@ THREADS=8
 
 
 RAW_DIR="$DATA_DIR/raw"
-OUT_DIR="$DATA_DIR/fastqc_raw"
-LOG_DIR="$DATA_DIR/logs"
-DONE_DIR="$LOG_DIR/raw_fastqc_completed"
+OUT_DIR="$DATA_DIR/raw/fastqc_raw"
+LOG_DIR="$DATA_DIR/raw/logs"
+DONE_DIR="$LOG_DIR/raw/raw_fastqc_completed"
 
 
 mkdir -p "$OUT_DIR"
