@@ -78,7 +78,7 @@ SPECIES <-
 # Salmon output directory
 
 SALMON_DIR <-
-    "/Volumes/AakankshaHd/PCD/Marchantia/trimmed/salmon"
+    "/Users/aakanksha/Desktop/github/Calcium_deficiency/trimmed/salmon"
 
 
 
@@ -470,13 +470,15 @@ cat("Saving matrices...\n\n")
 
 
 
-write.csv(
+write.table(
     txi$counts,
     file.path(
         OUTPUT_DIR,
         "counts.tsv"
     ),
-    quote = FALSE
+    sep = "\t",
+    quote = FALSE,
+    col.names = NA
 )
 
 
@@ -490,13 +492,15 @@ saveRDS(
 
 
 
-write.csv(
+write.table(
     txi$abundance,
     file.path(
         OUTPUT_DIR,
         "abundance.tsv"
     ),
-    quote = FALSE
+    sep = "\t",
+    quote = FALSE,
+    col.names = NA
 )
 
 
@@ -510,13 +514,15 @@ saveRDS(
 
 
 
-write.csv(
+write.table(
     txi$length,
     file.path(
         OUTPUT_DIR,
         "length.tsv"
     ),
-    quote = FALSE
+    sep = "\t",
+    quote = FALSE,
+    col.names = NA
 )
 
 
@@ -546,12 +552,14 @@ sample_table <-
 
 
 
-write.csv(
+write.table(
     sample_table,
     file.path(
         OUTPUT_DIR,
-        "sample_table.csv"
+        "sample_table.tsv"
     ),
+    sep = "\t",
+    quote = FALSE,
     row.names = FALSE
 )
 
