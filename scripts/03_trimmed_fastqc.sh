@@ -15,18 +15,18 @@ set -uo pipefail
 
 PROJECT_DIR="/Users/aakanksha/Desktop/github/Bryophyte-PCD"
 
-DATA_DIR="$PROJECT_DIR/data/Arabidopsis"
+DATA_DIR="/Volumes/AakankshaHd/PCD/trimmed"
 
 THREADS=8
 
 ########################################
 
 
-RAW_DIR="/Volumes/AakankshaHd/PCD/Marchantia/trimmed"
-OUT_DIR="$DATA_DIR/fastqc_trimmed"
+RAW_DIR="$DATA_DIR/trimmed"
+OUT_DIR="$DATA_DIR/trimmed/trimmed/fastqc_trimmed"
 
-LOG_DIR="$DATA_DIR/logs"
-DONE_DIR="$LOG_DIR/trimmed_fastqc_completed"
+LOG_DIR="$DATA_DIR/trimmed/logs"
+DONE_DIR="$LOG_DIR/trimmed/trimmed_fastqc_completed"
 
 
 mkdir -p "$OUT_DIR"
