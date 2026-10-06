@@ -16,11 +16,11 @@ set -euo pipefail
 
 PROJECT_DIR="/Users/aakanksha/Desktop/github/Bryophyte-PCD"
 
-DATA_DIR="$PROJECT_DIR/data/Arabidopsis"
+DATA_DIR="/Users/aakanksha/Desktop/github/Calcium_deficiency"
 
 RAW_DIR="$DATA_DIR/raw"
 
-TRIM_DIR="/Volumes/AakankshaHd/PCD/Arabidopsis/trimmed"
+TRIM_DIR="$DATA_DIR/trimmed"
 
 REPORT_DIR="$DATA_DIR/reports"
 
@@ -276,14 +276,20 @@ do
 
 
         fastp \
-            -i "$R1" \
-            -I "$R2" \
-            -o "$OUT1" \
-            -O "$OUT2" \
-            --detect_adapter_for_pe \
-            --thread "$THREADS" \
-            --html "$HTML" \
-            --json "$JSON"
+        -i "$R1" \
+        -I "$R2" \
+        -o "$OUT1" \
+        -O "$OUT2" \
+        --detect_adapter_for_pe \
+        --qualified_quality_phred 20 \
+        --unqualified_percent_limit 40 \
+        --length_required 36 \
+        --trim_poly_g \
+        --trim_poly_x \
+        --overrepresentation_analysis \
+        --thread "$THREADS" \
+        --html "$HTML" \
+        --json "$JSON"
 
 
 
@@ -299,12 +305,18 @@ do
 
 
 
-        fastp \
-            -i "$R1" \
-            -o "$OUTSE" \
-            --thread "$THREADS" \
-            --html "$HTML" \
-            --json "$JSON"
+       fastp \
+       -i "$R1" \
+       -o "$OUTSE" \
+       --qualified_quality_phred 20 \
+       --unqualified_percent_limit 40 \
+       --length_required 36 \
+       --trim_poly_g \
+       --trim_poly_x \
+       --overrepresentation_analysis \
+       --thread "$THREADS" \
+       --html "$HTML" \
+       --json "$JSON"
 
 
 
