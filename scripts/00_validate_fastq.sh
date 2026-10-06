@@ -15,7 +15,7 @@ set -uo pipefail
 
 PROJECT_DIR="/Users/aakanksha/Desktop/github/Bryophyte-PCD"
 
-DATA_DIR="$PROJECT_DIR/data/Arabidopsis/Time-point-exp"
+DATA_DIR="/Users/aakanksha/Desktop/github/Calcium_deficiency"
 
 ########################################
 
