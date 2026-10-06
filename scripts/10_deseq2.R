@@ -9,10 +9,6 @@
 #   Tan2023_D2      : 7 stresses vs control
 #   Schroder2023    : high_light vs control
 #   Grenz2025       : infected vs control
-#   Leong2022       : calcium_deficiency vs control
-#
-# Filtering:
-#   Gene must have >=10 counts in at least 50% of samples
 #
 # DESeq2:
 #   design = ~ condition
